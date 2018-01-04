@@ -15,6 +15,7 @@
 		wp_register_script('nivoSlider', get_theme_file_uri('/assets/js/lib/jquery.nivo.slider.pack.js'), array('migrate'), null, false);
 		wp_register_script('prettyPhoto', get_theme_file_uri('/assets/js/lib/jquery.prettyPhoto.js'), array('migrate'), null, false); 
 		wp_register_script('quicksand', get_theme_file_uri('/assets/js/lib/jquery.quicksand.js'), array('migrate'), null, false); 
+		wp_register_script('dailyMessages', get_theme_file_uri('/assets/js/lib/dailyMessages.min.js'), array('migrate'), null, false); 
 		
 		wp_register_script('script', get_theme_file_uri('/assets/js/script.js'), null, null, false);
 
@@ -23,6 +24,7 @@
 		wp_enqueue_script('nivoSlider');
 		wp_enqueue_script('prettyPhoto');
 		wp_enqueue_script('quicksand');
+		wp_enqueue_script('dailyMessages');
 		
 		wp_enqueue_script('custom');
 		wp_enqueue_script('script');
