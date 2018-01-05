@@ -32,7 +32,4 @@
 
 </ul><!-- .videos -->
 
-    
-
-
 <?php get_footer() ?>

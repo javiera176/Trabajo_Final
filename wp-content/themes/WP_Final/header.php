@@ -8,6 +8,19 @@
 	<?php get_template_part('_includes/meta', 'search') ?>
 	<?php get_template_part('_includes/iOS', 'icons') ?>
 	<?php wp_head() ?>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111994411-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-111994411-1');
+	</script>
+
+
+
 </head>
 <body>
 

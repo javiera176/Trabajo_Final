@@ -29,48 +29,48 @@
         <div class="inner">
         
             <h2>Lo que ofrecemos</h2>
-            <h3>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</h3>
+            <h3>Descubra cuales son los servicios ofrecidos</h3>
             
             <ul>
                 <li>
                     <span class="li_heart" style='cursor: pointer;' onclick="muestra_oculta('contenido_a_mostrar1')" ></span>
                     <h4>Matrimonios</h4>
-                    <p id = "contenido_a_mostrar1">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
+                    <p id = "contenido_a_mostrar1">Imagínate ese día tan importante entrando al altar con el Ave María</p>
                 </li> 
 
                 <li>
                     <span class="li_star" style='cursor: pointer;' onclick="muestra_oculta('contenido_a_mostrar2')"></span>
                     
                     <h4>Conciertos</h4>
-                    <p id = "contenido_a_mostrar2">Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
+                    <p id = "contenido_a_mostrar2">Contrata nuestros servicios para una velada inolvidable</p>
                 </li>
                 
                 
                 <li>
                     <span class="li_music" onclick="muestra_oculta('contenido_a_mostrar3')"></span>
                     <h4>Clases de canto</h4>
-                    <p id = "contenido_a_mostrar3">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
+                    <p id = "contenido_a_mostrar3">¿Quieres aprender canto? Esta es tu oportunidad</p>
                 </li>
                 
                 
                 <li>
                     <span class="li_star" onclick="muestra_oculta('contenido_a_mostrar4')"></span>
                     <h4>Papeles de ópera</h4>
-                    <p id = "contenido_a_mostrar4">Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praesent elit leo.</p>
+                    <p id = "contenido_a_mostrar4">Con mucha experiencia en canto y actuación </p>
                 </li>
                 
                 
                 <li>
                     <span class="li_graduation-cap" onclick="muestra_oculta('contenido_a_mostrar5')"></span>
                     <h4>Licenciaturas</h4>
-                    <p id = "contenido_a_mostrar5">Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellentesque egestas venenatis lorem .</p>
+                    <p id = "contenido_a_mostrar5">Presentación sobrecogedora para ese día del recuerdo</p>
                 </li>
                 
                 
                 <li>
                     <span class="li_star" onclick="muestra_oculta('contenido_a_mostrar6')"></span>
                     <h4>Eventos varios</h4>
-                    <p id = "contenido_a_mostrar6"> Funerales, cumpleaños etc... Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p>
+                    <p id = "contenido_a_mostrar6"> Funerales, cumpleaños entre otros... Cualquier evento en el que desee nuestra participación por favor comunicarse con nostros.</p>
                 </li>
             </ul>
             
@@ -85,7 +85,7 @@
         <div class="inner">
         
             <h2>Galería de imágenes</h2>
-            <h3>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</h3>
+            <h3>Visite nuestra galería </h3>
              
             
             <!-- Portfolio -->
@@ -130,7 +130,7 @@
             <h2>Contacto</h2>
             
             <!-- Short Description -->
-            <h3>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</h3>
+            <h3>Cualquier consulta o comentario, por favor comunicarse con nosotros</h3>
             
             <ul>
                 <li>
@@ -151,7 +151,7 @@
                 
                 <li>
                     <h4>Información de contacto</h4>
-                    <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.</p>
+                    <p>Comuníquese desde cualquier parte de Chile</p>
                     
                      
                     <span><i class="icon-phone"></i>9 88328298</span>

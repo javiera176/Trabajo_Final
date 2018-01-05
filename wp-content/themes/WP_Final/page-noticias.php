@@ -10,9 +10,9 @@
 
 	 <table class="table table-striped table-hover" id="tabla">
 	        <tr>
-	          <th>ID</th>
-	          <th>Título</th>
-	          <th>Contenido</th>
+	         
+	          <th>data</th>
+	          
 	        </tr>
 	 </table>
 
@@ -24,15 +24,15 @@
 	<script>
 		
 		$('#boton').on("click", function() {
-			var url = 'https://jsonplaceholder.typicode.com'; //pasamos una URL 
-			var id = parseInt(Math.random() * 100); // se general el id y se pone 100 porque es el máximo de post
+			$.ajax({
+		 	url: 'https://jsonplaceholder.typicode.com' + '/posts/',
+		 	method: 'GET'   
+			 }).then(function(data){	
+		 	console.log(data); 
 
-		    $.ajax({
-		    url: url + '/posts/' + id, //concatenamos el id
-		    method: 'GET' //método que vamos a utilizar
-		    }).then(function(data) {
-		      $('#tabla').append('<tr> <td>' + data.id + '</td><td>' + data.title + '</td><td>' + data.body + '</td></tr>')
-		    });
+		 	    $('#tabla').append('<tr> <td>' + data + '</td> </tr>') 
+		 		})
+
 		});
 
 

@@ -10,7 +10,7 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, ul, li, span {
 	
 html, html a {
     -webkit-font-smoothing: antialiased;
-	}
+}
 
 /*Font Face Fontello*/
 @font-face {
@@ -54,24 +54,6 @@ ul {
 	}
 
 
-@media only screen and (max-width: 500px) {
-    body {
-       color: #767e9e;
-	font-family: 'Lato', sans-serif;
-	font-size: 18px;
-	font-weight: 400;
-	background-color: #f2f2f2;
-    }
-}
-
-@media(min-width: 400px) and (max-width: 600px) {
-	body::after{
-		content: "pequeño";
-	}
- }
-
- 
-
 h2 {
 	font-size: 30px;
 	font-weight: 900;
@@ -98,7 +80,7 @@ p {
 	font-weight: 400;
 	line-height: 1.7;
 	color: #767e9e;
-	}
+}
 	
 .left {
 	float: left;
@@ -176,11 +158,7 @@ ul.nav-menu li:first-child {
 	border-left: none;
 }
 
-/*ul.nav-menu li:before {
-font-family: 'fontello';
-content: "|";
-color: rgba(131, 131, 131, 0.24);
-}*/
+ 
 	
 ul.nav-menu li:first-child:before {
 	 
@@ -722,7 +700,7 @@ textarea {
 	 
 	padding-top: 30px; 
 	margin: 100px 100px; 
-	 font-size: 15px;
+	font-size: 15px;
 }
 
 .biografia p{
@@ -737,3 +715,24 @@ margin-top: 150px;
  
 
 
+@media only screen and (max-width: 500px) {
+    body {
+    	color: #767e9e;
+		font-family: 'Lato', sans-serif;
+		font-size: 18px;
+		font-weight: 400;
+		background-color: #f2f2f2;
+    }
+}
+
+ @media only screen and (max-width: 800px){
+		div.biografia {
+			margin: 10px;
+		}
+	}
+
+@media(min-width: 801px) {
+	body::after{
+		/*content: "grande";*/
+	}
+} 
