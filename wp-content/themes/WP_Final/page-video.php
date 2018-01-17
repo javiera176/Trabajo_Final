@@ -24,8 +24,12 @@
         ?>
 
     
-    <p><?php the_field('contenido'); ?></p>
-    <h2><?php the_field('link'); ?></h2>
+    <li>
+        
+        <div><?php the_field('contenido'); ?></div>
+        <h2><?php the_field('link'); ?></h2>
+
+    </li>
     
         <?php } wp_reset_postdata();
     ?>

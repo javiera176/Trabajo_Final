@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="es"> 
+<head> 
+	<meta charset="utf-8" /> 
+	<meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0" /> 
+	<title></title>
+
+</head>
+
+<body> 
+	<header> 
+		<p class="message2"></p> 
+		<p class="message3"></p> 
+		<p class="message4"></p> 
+		 
+		 
+	</header> 
+
+	 <table class="table table-striped table-hover" id="tabla">
+        <tr> 
+          <th>Insulto</th> 
+        </tr>
+	 </table>
+
+	<!-- this is where we put our custom functions --> 
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+	<script> 
+		$(document).ready(function (){ 
+			var fetch = { 
+				url: 'http://foaas.com/bday/Javiera/friend', 
+				type: 'GET', 
+				dataType: 'json', 
+			} 
+			$.ajax(fetch) 
+			.done(function(data) { 
+				var div_content = $('.message2') 
+			    div_content.html(data.message)  
+
+			}) 
+			.fail(function(error) { 
+				// console.log(error) 
+			}) 
+			.always(function() { 
+				// console.log("complete") 
+			}) 
+		}) 
+	</script> 
+
+
+	<script> 
+		$(document).ready(function (){ 
+			var fetch = { 
+				url: 'http://foaas.com/ballmer/Javiera/Celdon/friend', 
+				type: 'GET', 
+				dataType: 'json', 
+			} 
+			$.ajax(fetch) 
+			.done(function(data) { 
+				var div_content = $('.message3') 
+			    div_content.html(data.message)  
+
+			}) 
+			.fail(function(error) { 
+				// console.log(error) 
+			}) 
+			.always(function() { 
+				// console.log("complete") 
+			}) 
+		}) 
+	</script> 
+
+	<script> 
+		$(document).ready(function (){ 
+			var fetch = { 
+				url: 'http://foaas.com/ballmer/Javiera/Celdon/friend', 
+				type: 'GET', 
+				dataType: 'json', 
+			} 
+			$.ajax(fetch) 
+			.done(function(data) { 
+				var div_content = $('.message4') 
+			    div_content.html(data.message) 
+			    $('#tabla').append('<tr> <td>' + data + '</td> </tr>')  
+
+			}) 
+			.fail(function(error) { 
+				// console.log(error) 
+			}) 
+			.always(function() { 
+				// console.log("complete") 
+			}) 
+		}) 
+	</script> 
+
+
+ 
+</body> 
+</html>

@@ -9,14 +9,33 @@
 
     <div id="slider" class="theme-default">
         <div class="inner">
-        
-            <div class="nivo-slider nivoSlider">
 
-                <img class = "img-responsive" src="<?php bloginfo('template_url') ?>/assets/images/Blanneg.jpg"/>
-                <img class = "img-responsive" src="<?php bloginfo('template_url') ?>/assets/images/4_2.jpg"/>
-                <img class = "img-responsive" src="<?php bloginfo('template_url') ?>/assets/images/7_2.jpg"/>
+
+
+            <div class="nivo-slider nivoSlider" >
+
+                <?php
+                    $sliders = array(
+                        'post_type'      => 'slider',
+                        'posts_per_page' => 8,
+                    );
+                
+                    $get_sliders = new WP_Query( $sliders );
+                
+                    while ( $get_sliders->have_posts() ) {
+                        $get_sliders->the_post();
+                    ?>
+
                
-            </div>
+                    <a href="<?php the_post_thumbnail_url() ?>">
+                        <?php the_post_thumbnail('sliders'); ?>
+                    </a>
+                
+                
+                    <?php } wp_reset_postdata();
+                ?>
+
+            </div><!-- .sliders --> 
                 
         </div><!-- .inner -->
     </div><!-- #slider -->
@@ -32,6 +51,7 @@
             <h3>Descubra cuales son los servicios ofrecidos</h3>
             
             <ul>
+                
                 <li>
                     <span class="li_heart" style='cursor: pointer;' onclick="muestra_oculta('contenido_a_mostrar1')" ></span>
                     <h4>Matrimonios</h4>
@@ -50,8 +70,7 @@
                     <span class="li_music" onclick="muestra_oculta('contenido_a_mostrar3')"></span>
                     <h4>Clases de canto</h4>
                     <p id = "contenido_a_mostrar3">¿Quieres aprender canto? Esta es tu oportunidad</p>
-                </li>
-                
+                </li>  
                 
                 <li>
                     <span class="li_star" onclick="muestra_oculta('contenido_a_mostrar4')"></span>
@@ -234,10 +253,8 @@
                 var el = document.getElementById(id); //se define la variable "el" igual a nuestro div
                 el.style.display = (el.style.display == 'none') ? 'block' : 'none'; //damos un atributo display:none que oculta el div
             }
-        }
-        window.onload = function(){/*hace que se cargue la función lo que predetermina que div estará oculto hasta llamar a la función nuevamente*/
-            muestra_oculta('contenido_a_mostrar');/* "contenido_a_mostrar" es el nombre que le dimos al DIV */
-        } //al presionar los linecons se muestra y oculta el texto
+        }//al presionar los linecons se muestra y oculta el texto
+      
     </script> 
 
     <!--End solución Vanilla-->

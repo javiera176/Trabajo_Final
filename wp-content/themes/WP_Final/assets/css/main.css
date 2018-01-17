@@ -227,7 +227,7 @@ ul.nav-menu li a:hover {
 	float: left;
 	padding: 0 20px 0 0;
 	max-width: 290px;
-	margin: 0 0 36px 0;
+	margin: 0 0 36px 0;  
 	}
 
 #services ul li span {
@@ -296,6 +296,8 @@ content: "\e024";
 	text-align: justify;
 	}
  	
+
+
 	 
 /*===================================
 ============= Portfolio =============
@@ -736,3 +738,8 @@ margin-top: 150px;
 		/*content: "grande";*/
 	}
 } 
+
+.portfolio > li {
+	float: left;
+	margin-left: 30px;
+}
